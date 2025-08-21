@@ -1,7 +1,7 @@
 from django.db import models
 
 class Receita(models.Model):
-    tittle = models.CharField(max_length=200)
+    title = models.CharField(max_length=200)
     description = models.TextField()
     ingredients = models.TextField()
     instructions = models.TextField()
@@ -12,8 +12,7 @@ class Receita(models.Model):
     def __str__(self):
         return self.title
     
-    class Meta:
-        verbose_name = 'Receita'
-        verbose_name_plural = 'Receitas'
+    class Meta :
+        verbose_name = "Receita"
+        verbose_name_plural = "Receitas"
         ordering = ['-created_at']
-        #Ordena as receitas mais recentes primeiro
