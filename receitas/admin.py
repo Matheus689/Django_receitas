@@ -3,3 +3,4 @@ from.models import Receita
 
 # Register your models here.
 admin.site.register(Receita)
+#finalizado
